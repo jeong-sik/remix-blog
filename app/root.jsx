@@ -1,3 +1,5 @@
+import styles from "./styles/app.css"
+
 import {
   Links,
   LiveReload,
@@ -9,6 +11,10 @@ import {
 
 export function meta() {
   return { title: "yousleepwhen" }
+}
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }]
 }
 
 export default function App() {
