@@ -4,11 +4,11 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration
-} from "remix";
+  ScrollRestoration,
+} from "remix"
 
 export function meta() {
-  return { title: "New Remix App" };
+  return { title: "yousleepwhen" }
 }
 
 export default function App() {
@@ -27,5 +27,5 @@ export default function App() {
         {process.env.NODE_ENV === "development" && <LiveReload />}
       </body>
     </html>
-  );
+  )
 }
