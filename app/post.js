@@ -3,8 +3,8 @@ import fs from "fs/promises"
 import parseFrontMatter from "front-matter"
 import invariant from "tiny-invariant"
 import { marked } from "marked"
-const postsPath = path.join(__dirname, "../../../..", "posts")
-// const postsPath = path.join(__dirname, "../..", "posts")
+// const postsPath = path.join(__dirname, "../../../..", "posts")
+const postsPath = path.join(__dirname, "../..", "posts")
 
 function isValidPostAttributes(attributes) {
   return attributes?.title
@@ -21,18 +21,23 @@ export async function getPost(slug) {
   const html = marked(body)
   return { slug, html, title: attributes.title }
 }
-
 export async function getPosts() {
-  const dir = await fs.readdir(postsPath)
-  return Promise.all(
-    dir.map(async (filename) => {
-      const file = await fs.readFile(path.join(postsPath, filename))
+  const postOrSeriesBasenames = await fs.readdir(`${__dirname}/../../posts`, {
+    withFileTypes: true,
+  })
+
+  const posts = await Promise.all(
+    postOrSeriesBasenames.map(async (dirent) => {
+      const file = await fs.readFile(
+        path.join(`${__dirname}/../../posts`, dirent.name)
+      )
       const { attributes } = parseFrontMatter(file.toString())
-      invariant(isValidPostAttributes(attributes))
       return {
-        slug: filename.replace(/\.mdx$/, ""),
+        slug: dirent.name.replace(/\.mdx/, ""),
         title: attributes.title,
       }
     })
   )
+
+  return posts
 }
