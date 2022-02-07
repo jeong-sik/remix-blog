@@ -43,6 +43,9 @@ export default function Index() {
           misoleul ttuiumyeo naleul bonaen geu moseubcheoleom
         </a>
       </div>
+      <nav className="text-[#ccc] m-4">
+        <Link to="/posts">글</Link>
+      </nav>
     </div>
   )
 }

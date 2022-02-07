@@ -12,11 +12,14 @@ export const loader = async ({ params }) => {
 export default function PostSlug() {
   const post = useLoaderData()
   return (
-    <div className="p-4 m-4 font-batang">
+    <div className="p-4 m-4 font-batang text-[#ccc]">
       <Link className="text-[30px] font-bold text-[#rrr]" to={"/posts"}>
         돌아가기
       </Link>
-      <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+      <div
+        className="break-all"
+        dangerouslySetInnerHTML={{ __html: post.html }}
+      ></div>
     </div>
   )
 }
