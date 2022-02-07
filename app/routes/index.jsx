@@ -1,6 +1,8 @@
+import Posts from "./posts"
+import { Link, useLoaderData } from "remix"
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
+    <div style={{ lineHeight: "1.4" }}>
       <iframe
         width="100%"
         height="300"

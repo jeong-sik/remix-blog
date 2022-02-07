@@ -23,10 +23,12 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link href="/dist/output.css" rel="stylesheet" />
+
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="font-batang">
         <Outlet />
         <ScrollRestoration />
         <Scripts />

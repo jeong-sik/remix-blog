@@ -9,8 +9,8 @@ export const loader = async () => {
 export default function Posts() {
   const posts = useLoaderData()
   return (
-    <div>
-      <h1>Posts</h1>
+    <div className="p-4 m-4">
+      <h1 className="text-[30px] font-bold text-[#rrr]">글</h1>
       <ul>
         {posts.map((post) => (
           <li key={post.slug}>
