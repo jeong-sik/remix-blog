@@ -108,7 +108,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-[#2f2f2f] font-batang">
+      <body className="bg-[#2f2f2f] font-batang scrollbar-hide">
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-SF0R12VJD3"

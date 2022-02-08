@@ -21,8 +21,8 @@ export default function Posts() {
                 className="flex items-center justify-between w-full text-lg"
               >
                 <p>{post.title}</p>
-                <span className="text-sm italic">
-                  {format(new Date(post.date), "yyyy-MM-dd")}
+                <span className="text-sm">
+                  {format(new Date(post.date), "yyyy년 M월 d일")}
                 </span>
               </Link>
             </li>
