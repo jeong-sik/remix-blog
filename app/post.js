@@ -3,7 +3,6 @@ import fs from "fs/promises"
 import parseFrontMatter from "front-matter"
 import invariant from "tiny-invariant"
 import { marked } from "marked"
-// const postsPath = path.join(__dirname, "../../../..", "posts")
 const postsPath = path.join(__dirname, "../..", "posts")
 
 function isValidPostAttributes(attributes) {
@@ -19,7 +18,7 @@ export async function getPost(slug) {
     `Post ${filepath} is missing attributes`
   )
   const html = marked(body)
-  return { slug, html, title: attributes.title }
+  return { slug, html, title: attributes.title, tags: attributes.tags }
 }
 export async function getPosts() {
   const postOrSeriesBasenames = await fs.readdir(`${__dirname}/../../posts`, {
@@ -35,6 +34,7 @@ export async function getPosts() {
       return {
         slug: dirent.name.replace(/\.mdx/, ""),
         title: attributes.title,
+        tag: attributes.tags,
       }
     })
   )

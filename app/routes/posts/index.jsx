@@ -10,8 +10,8 @@ export default function Posts() {
   const posts = useLoaderData()
 
   return (
-    <div className="p-4 m-4 text-[#ccc]">
-      <h1 className="text-[30px] font-bold text-[#rrr]">글</h1>
+    <div className="p-4 m-4 text-[#ccc] keep-all">
+      <h1 className="text-[30px] font-bold text-white">글</h1>
       <ul>
         {posts.map((post) => (
           <li key={post.slug}>
