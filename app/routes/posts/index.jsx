@@ -11,7 +11,6 @@ export default function Posts() {
 
   return (
     <div className="p-5 text-[#ccc] keep-all">
-      <h1 className="text-[28px] font-bold text-white mb-4">글</h1>
       <ul>
         {posts.map((post) => {
           return (

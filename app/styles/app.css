@@ -2373,36 +2373,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     U+FEFF, U+FFFD;
 }
 
-.fixed {
-  position: fixed;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.z-0 {
-  z-index: 0;
-}
-
 .m-4 {
   margin: 1rem;
 }
 
-.m-\[-9999px\] {
-  margin: -9999px;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
+.mr-4 {
+  margin-right: 1rem;
 }
 
 .mb-4 {
@@ -2413,24 +2389,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: auto;
 }
 
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .flex {
   display: flex;
-}
-
-.hidden {
-  display: none;
-}
-
-.h-\[100vh\] {
-  height: 100vh;
-}
-
-.h-full {
-  height: 100%;
-}
-
-.h-\[100\%\] {
-  height: 100%;
 }
 
 .min-h-\[100vh\] {
@@ -2441,6 +2417,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
+.flex-none {
+  flex: none;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -2449,49 +2429,41 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
-.justify-between {
-  justify-content: space-between;
+.justify-center {
+  justify-content: center;
 }
 
-.overflow-auto {
-  overflow: auto;
+.justify-between {
+  justify-content: space-between;
 }
 
 .whitespace-pre-wrap {
   white-space: pre-wrap;
 }
 
-.bg-\[\#2f2f2f\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(47 47 47 / var(--tw-bg-opacity));
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-\[12px\] {
+  border-radius: 12px;
+}
+
+.rounded-\[24px\] {
+  border-radius: 24px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .bg-transparent {
   background-color: transparent;
 }
 
-.bg-\[\#ccc\] {
+.bg-\[\#2f2f2f\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(204 204 204 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#2d2f2f\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(45 47 47 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#a00\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(170 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.p-4 {
-  padding: 1rem;
+  background-color: rgb(47 47 47 / var(--tw-bg-opacity));
 }
 
 .p-5 {
@@ -2506,8 +2478,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Gowun Batang, Roboto, serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
 
-.text-\[36px\] {
-  font-size: 36px;
+.text-\[28px\] {
+  font-size: 28px;
 }
 
 .text-lg {
@@ -2523,17 +2495,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 24px;
 }
 
-.text-\[32px\] {
-  font-size: 32px;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
-.text-\[28px\] {
-  font-size: 28px;
+.text-\[18px\] {
+  font-size: 18px;
 }
 
 .font-bold {
@@ -2545,14 +2513,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(204 204 204 / var(--tw-text-opacity));
 }
 
-.text-\[\#ccc\] {
-  --tw-text-opacity: 1;
-  color: rgb(204 204 204 / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#ccc\] {
+  --tw-text-opacity: 1;
+  color: rgb(204 204 204 / var(--tw-text-opacity));
 }
 
 .break-keep-all {
