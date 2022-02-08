@@ -10,8 +10,8 @@ export default function Posts() {
   const posts = useLoaderData()
 
   return (
-    <div className="p-4 m-4 text-[#ccc] keep-all">
-      <h1 className="text-[32px] font-bold text-white mb-4">글</h1>
+    <div className="p-5 text-[#ccc] keep-all">
+      <h1 className="text-[28px] font-bold text-white mb-4">글</h1>
       <ul>
         {posts.map((post) => {
           return (

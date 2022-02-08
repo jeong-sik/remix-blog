@@ -27,7 +27,7 @@ export default function App() {
   }, [location])
 
   return (
-    <html lang="en" className="bg-transparent">
+    <html lang="en" className="bg-red">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -109,7 +109,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <section className="z-100 overflow-auto h-[100vh] bg-[#2f2f2f] font-batang scrollbar-hide">
+        <section className="flex flex-col min-h-[100vh] bg-[#2f2f2f] font-batang scrollbar-hide">
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-SF0R12VJD3"
@@ -129,6 +129,7 @@ export default function App() {
           <ScrollRestoration />
           <Scripts />
           {process.env.NODE_ENV === "development" && <LiveReload />}
+          <footer className="mt-auto" />
         </section>
       </body>
     </html>

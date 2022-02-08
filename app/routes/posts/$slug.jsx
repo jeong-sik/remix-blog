@@ -14,8 +14,8 @@ export default function PostSlug() {
   const post = useLoaderData()
 
   return (
-    <article className="flex flex-col p-4 m-4 font-batang text-[#ccc] break-keep-all whitespace-pre-wrap">
-      <h2 className="text-[36px] font-bold text-white">{post.title}</h2>
+    <article className="flex flex-col p-5 font-batang text-[#ccc] break-keep-all whitespace-pre-wrap">
+      <h2 className="text-[28px] font-bold text-white">{post.title}</h2>
 
       <div
         className="mt-4 text-lg"
