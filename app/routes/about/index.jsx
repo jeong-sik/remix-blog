@@ -2,7 +2,6 @@ import { Link, useLoaderData } from "remix"
 export default function Index() {
   return (
     <ul className="ml-4 text-[#ccc] text-[18px]">
-      <li>나는 열두살</li>
       <li>
         <a target="_blank" href="https://soundcloud.com/yousleepwhen">
           사운드클라우드

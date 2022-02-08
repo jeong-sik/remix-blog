@@ -2419,6 +2419,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.max-h-\[120px\] {
+  max-height: 120px;
+}
+
+.max-h-\[80px\] {
+  max-height: 80px;
+}
+
+.max-h-\[24px\] {
+  max-height: 24px;
+}
+
+.max-h-\[48px\] {
+  max-height: 48px;
+}
+
+.max-h-\[72px\] {
+  max-height: 72px;
+}
+
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
@@ -2449,6 +2469,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between {
   justify-content: space-between;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .whitespace-pre-wrap {
@@ -2598,11 +2622,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+}
+
+.line-clamp-4 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 
 .line-clamp-5 {

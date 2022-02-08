@@ -14,7 +14,7 @@ export default function Index() {
       <Link to={`/posts/${post.slug}`}>
         <p className="text-[#ccc] font-bold text-[18px]">{post.title}</p>
         <div
-          className="text-[#999] line-clamp-2 break-keep-all"
+          className="text-[#999] max-h-[48px] overflow-hidden break-keep-all"
           dangerouslySetInnerHTML={{ __html: post.html }}
         ></div>
         <p className="text-[#ccc] font-bold text-[18px] mt-4">더 읽기</p>
