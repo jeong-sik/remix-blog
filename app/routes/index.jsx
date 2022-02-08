@@ -2,7 +2,7 @@ import Posts from "./posts"
 import { Link, useLoaderData } from "remix"
 export default function Index() {
   return (
-    <div style={{ lineHeight: "1.4" }}>
+    <section style={{ lineHeight: "1.4" }}>
       <iframe
         width="100%"
         height="300"
@@ -43,9 +43,9 @@ export default function Index() {
           misoleul ttuiumyeo naleul bonaen geu moseubcheoleom
         </a>
       </div>
-      <nav className="text-[#ccc] m-4">
+      <nav className="text-[rgb(204,204,204)] m-4">
         <Link to="/posts">글</Link>
       </nav>
-    </div>
+    </section>
   )
 }

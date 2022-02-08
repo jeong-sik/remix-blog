@@ -18,7 +18,7 @@ export default function Posts() {
             <li key={post.slug}>
               <Link
                 to={post.slug}
-                className="flex items-center justify-between w-full"
+                className="flex items-center justify-between w-full text-lg"
               >
                 <p>{post.title}</p>
                 <span className="text-sm italic">

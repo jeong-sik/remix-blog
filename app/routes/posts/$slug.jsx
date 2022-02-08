@@ -18,7 +18,7 @@ export default function PostSlug() {
         돌아가기
       </Link>
       <div
-        className="mt-4"
+        className="mt-4 text-lg"
         dangerouslySetInnerHTML={{ __html: post.html }}
       ></div>
     </div>
