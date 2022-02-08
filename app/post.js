@@ -18,7 +18,13 @@ export async function getPost(slug) {
     `Post ${filepath} is missing attributes`
   )
   const html = marked(body)
-  return { slug, html, title: attributes.title, tags: attributes.tags }
+  return {
+    slug,
+    html,
+    title: attributes.title,
+    tags: attributes.tags,
+    date: attributes.date,
+  }
 }
 export async function getPosts() {
   const postOrSeriesBasenames = await fs.readdir(`${__dirname}/../../posts`, {
@@ -35,6 +41,7 @@ export async function getPosts() {
         slug: dirent.name.replace(/\.mdx/, ""),
         title: attributes.title,
         tag: attributes.tags,
+        date: attributes.date,
       }
     })
   )

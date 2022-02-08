@@ -1,5 +1,5 @@
 import { Link, useLoaderData } from "remix"
-
+import { format } from "date-fns"
 import { getPosts } from "~/post"
 
 export const loader = async () => {
@@ -11,13 +11,23 @@ export default function Posts() {
 
   return (
     <div className="p-4 m-4 text-[#ccc] keep-all">
-      <h1 className="text-[30px] font-bold text-white">글</h1>
+      <h1 className="text-[32px] font-bold text-white mb-4">글</h1>
       <ul>
-        {posts.map((post) => (
-          <li key={post.slug}>
-            <Link to={post.slug}>{post.title}</Link>
-          </li>
-        ))}
+        {posts.map((post) => {
+          return (
+            <li key={post.slug}>
+              <Link
+                to={post.slug}
+                className="flex items-center justify-between w-full"
+              >
+                <p>{post.title}</p>
+                <span className="text-sm italic">
+                  {format(new Date(post.date), "yyyy-MM-dd")}
+                </span>
+              </Link>
+            </li>
+          )
+        })}
       </ul>
     </div>
   )

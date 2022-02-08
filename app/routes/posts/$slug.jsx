@@ -14,10 +14,13 @@ export default function PostSlug() {
 
   return (
     <div className="p-4 m-4 font-batang text-[#ccc] break-keep-all whitespace-pre-wrap">
-      <Link className="text-[30px] font-bold text-[#rrr]" to={"/posts"}>
+      <Link className="text-[32px] font-bold text-white" to={"/posts"}>
         돌아가기
       </Link>
-      <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+      <div
+        className="mt-4"
+        dangerouslySetInnerHTML={{ __html: post.html }}
+      ></div>
     </div>
   )
 }
