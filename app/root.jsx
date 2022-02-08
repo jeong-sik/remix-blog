@@ -24,7 +24,15 @@ export default function App() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <link href="/dist/output.css" rel="stylesheet" />
-
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-SF0R12VJD3"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-SF0R12VJD3');
+        </script>
         <Meta />
         <Links />
       </head>
