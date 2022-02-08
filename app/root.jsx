@@ -108,7 +108,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="scrollbar-hide">
         <section className="flex flex-col min-h-[100vh] bg-[#2f2f2f] font-batang scrollbar-hide">
           <script
             async
