@@ -14,7 +14,7 @@ export default function Posts() {
       <ul>
         {posts.map((post) => {
           return (
-            <li key={post.slug}>
+            <li key={post.slug} className="mb-2">
               <Link
                 to={post.slug}
                 className="flex items-center justify-between w-full text-lg"

@@ -45,8 +45,7 @@ export async function getPosts() {
       }
     })
   )
-
-  return posts
+  return posts.sort((a, b) => new Date(b.date) - new Date(a.date))
 }
 
 export async function getRecentPost() {
@@ -70,6 +69,6 @@ export async function getRecentPost() {
       }
     })
   )
-
-  return posts[0]
+  let sorted = posts.sort((a, b) => new Date(b.date) - new Date(a.date))
+  return sorted[0]
 }
