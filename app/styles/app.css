@@ -2373,8 +2373,28 @@ Ensure the default browser behavior of the `hidden` attribute.
     U+FEFF, U+FFFD;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
 .m-4 {
   margin: 1rem;
+}
+
+.m-\[-9999px\] {
+  margin: -9999px;
 }
 
 .mt-4 {
@@ -2397,16 +2417,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-\[100\%\] {
-  height: 100%;
-}
-
 .h-\[100vh\] {
   height: 100vh;
 }
 
-.min-h-\[100vh\] {
-  min-height: 100vh;
+.h-full {
+  height: 100%;
 }
 
 .w-full {
@@ -2425,6 +2441,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .whitespace-pre-wrap {
   white-space: pre-wrap;
 }
@@ -2432,6 +2452,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#2f2f2f\] {
   --tw-bg-opacity: 1;
   background-color: rgb(47 47 47 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .p-4 {

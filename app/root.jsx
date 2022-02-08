@@ -12,7 +12,7 @@ import {
 import * as gtag from "~/utils/gtags"
 
 export function meta() {
-  return { title: "yousleepwhen" }
+  return { title: "yousleepwhen.be" }
 }
 
 export function links() {
@@ -27,7 +27,7 @@ export default function App() {
   }, [location])
 
   return (
-    <html lang="en" className="bg-[#2f2f2f] h-[100%]">
+    <html lang="en" className="bg-transparent">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -108,26 +108,28 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="h-[100vh] bg-[#2f2f2f] font-batang scrollbar-hide">
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-SF0R12VJD3"
-        ></script>
-        <script
-          async
-          id="gtag-init"
-          dangerouslySetInnerHTML={{
-            __html: `
+      <body>
+        <section className="z-100 overflow-auto h-[100vh] bg-[#2f2f2f] font-batang scrollbar-hide">
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-SF0R12VJD3"
+          ></script>
+          <script
+            async
+            id="gtag-init"
+            dangerouslySetInnerHTML={{
+              __html: `
           window.dataLayer = window.dataLayer || []; function gtag()
           {dataLayer.push(arguments)}
           gtag('js', new Date()); gtag('config', 'G-SF0R12VJD3');
           `,
-          }}
-        />
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        {process.env.NODE_ENV === "development" && <LiveReload />}
+            }}
+          />
+          <Outlet />
+          <ScrollRestoration />
+          <Scripts />
+          {process.env.NODE_ENV === "development" && <LiveReload />}
+        </section>
       </body>
     </html>
   )
