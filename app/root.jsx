@@ -1,4 +1,5 @@
 import styles from "./styles/app.css"
+import { useLocation } from "react-router-dom"
 
 import {
   Links,
@@ -8,6 +9,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "remix"
+import * as gtag from "~/utils/gtags"
 
 export function meta() {
   return { title: "yousleepwhen" }
@@ -18,25 +20,38 @@ export function links() {
 }
 
 export default function App() {
+  const location = useLocation()
+
+  React.useEffect(() => {
+    gtag.pageview(location.pathname)
+  }, [location])
+
   return (
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <link href="/dist/output.css" rel="stylesheet" />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-SF0R12VJD3"
-        ></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-SF0R12VJD3');
-        </script>
+
         <Meta />
         <Links />
       </head>
       <body className="bg-black font-batang">
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-SF0R12VJD3"
+        ></script>
+        <script
+          async
+          id="gtag-init"
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-SF0R12VJD3');
+          `,
+          }}
+        />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
