@@ -1,5 +1,7 @@
 {
   "name": "yousleepwhen.be",
+  "theme_color": "#2f2f2f",
+  "background_color": "#2f2f2f",
   "display": "minimal-ui",
   "icons": [
     {

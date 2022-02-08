@@ -27,7 +27,7 @@ export default function App() {
   }, [location])
 
   return (
-    <html lang="en">
+    <html lang="en" className="bg-[#2f2f2f] h-[100%]">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -108,7 +108,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-[#2f2f2f] font-batang scrollbar-hide">
+      <body className="h-[100vh] bg-[#2f2f2f] font-batang scrollbar-hide">
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-SF0R12VJD3"
