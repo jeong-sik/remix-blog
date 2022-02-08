@@ -97,5 +97,5 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [keepAll, scrollbarHide],
+  plugins: [keepAll, scrollbarHide, require("@tailwindcss/line-clamp")],
 }

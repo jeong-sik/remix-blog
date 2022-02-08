@@ -48,3 +48,28 @@ export async function getPosts() {
 
   return posts
 }
+
+export async function getRecentPost() {
+  const postOrSeriesBasenames = await fs.readdir(`${__dirname}/../../posts`, {
+    withFileTypes: true,
+  })
+
+  const posts = await Promise.all(
+    postOrSeriesBasenames.map(async (dirent) => {
+      const file = await fs.readFile(
+        path.join(`${__dirname}/../../posts`, dirent.name)
+      )
+      const { attributes, body } = parseFrontMatter(file.toString())
+      const html = marked(body)
+      return {
+        slug: dirent.name.replace(/\.mdx/, ""),
+        title: attributes.title,
+        tag: attributes.tags,
+        date: attributes.date,
+        html: html,
+      }
+    })
+  )
+
+  return posts[0]
+}

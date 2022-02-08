@@ -91,13 +91,13 @@ function CustomMeta() {
 
 function Document({ children, title }) {
   return (
-    <html lang="en" className="bg-transparent">
+    <html lang="en" className="bg-[#212121]">
       <head>
         <CustomMeta />
         {title ? <title>{title}</title> : null}
         <Links />
       </head>
-      <body className="scrollbar-hide">
+      <body className="bg-transparent scrollbar-hide">
         {children}
         <ScrollRestoration />
         <Scripts />
@@ -108,7 +108,7 @@ function Document({ children, title }) {
 
 function Layout({ children }) {
   return (
-    <div className="flex flex-col min-h-[100vh] bg-[#2f2f2f] font-batang scrollbar-hide">
+    <div className="my-0 mx-auto max-w-[768px] flex flex-col min-h-[100vh] bg-[#2f2f2f] font-batang scrollbar-hide">
       <nav className="flex text-[rgb(204,204,204)] m-4">
         <Link to="/posts" className="mr-4">
           <h2 className="text-[28px] font-bold text-white mb-4">글</h2>
