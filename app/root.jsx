@@ -135,14 +135,24 @@ function Layout({ children }) {
       />
 
       {process.env.NODE_ENV === "development" && <LiveReload />}
-      <footer className="mt-auto ml-5">
+      <footer className="mt-auto ml-5 mr-5">
+        <div className="mb-5">
+          <iframe
+            width="100%"
+            src="https://www.youtube.com/embed/GnJiS8jjJH0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
         <div className="flex items-center justify-between flex-none mb-4">
           <Link to="/" className="flex items-center justify-center flex-none ">
             <h2 className="text-[28px] flex-none font-bold text-white ">
               처음
             </h2>
           </Link>
-          <Link to="/about" className="flex items-center mr-4">
+          <Link to="/about" className="flex items-center">
             <Gravatar
               email="yousleepwhen@gmail.com"
               className="rounded-[24px]"
