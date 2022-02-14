@@ -2403,12 +2403,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 1.25rem;
 }
 
-.ml-4 {
-  margin-left: 1rem;
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
 }
 
 .mt-8 {
@@ -2419,36 +2427,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
-.mr-5 {
-  margin-right: 1.25rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
 .flex {
   display: flex;
 }
 
-.max-h-\[120px\] {
-  max-height: 120px;
-}
-
-.max-h-\[80px\] {
-  max-height: 80px;
-}
-
-.max-h-\[24px\] {
-  max-height: 24px;
-}
-
 .max-h-\[48px\] {
   max-height: 48px;
-}
-
-.max-h-\[72px\] {
-  max-height: 72px;
 }
 
 .min-h-\[100vh\] {
@@ -2551,46 +2535,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
-.tracking-\[1em\] {
-  letter-spacing: 1em;
-}
-
-.tracking-\[2em\] {
-  letter-spacing: 2em;
-}
-
-.tracking-\[0\.2em\] {
-  letter-spacing: 0.2em;
-}
-
-.tracking-\[-0\.2em\] {
-  letter-spacing: -0.2em;
-}
-
-.tracking-\[-1\.2em\] {
-  letter-spacing: -1.2em;
-}
-
-.tracking-\[-\.2em\] {
-  letter-spacing: -.2em;
-}
-
-.tracking-\[-\.5em\] {
-  letter-spacing: -.5em;
-}
-
-.tracking-\[-\.1em\] {
-  letter-spacing: -.1em;
-}
-
-.tracking-\[-\.12em\] {
-  letter-spacing: -.12em;
-}
-
-.tracking-\[-\.14em\] {
-  letter-spacing: -.14em;
-}
-
 .text-\[rgb\(204\2c 204\2c 204\)\] {
   --tw-text-opacity: 1;
   color: rgb(204 204 204 / var(--tw-text-opacity));
@@ -2604,16 +2548,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#ccc\] {
   --tw-text-opacity: 1;
   color: rgb(204 204 204 / var(--tw-text-opacity));
-}
-
-.text-\[\#ddd\] {
-  --tw-text-opacity: 1;
-  color: rgb(221 221 221 / var(--tw-text-opacity));
-}
-
-.text-\[\#aaa\] {
-  --tw-text-opacity: 1;
-  color: rgb(170 170 170 / var(--tw-text-opacity));
 }
 
 .text-\[\#999\] {
@@ -2632,32 +2566,4 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
-}
-
-.line-clamp-1 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-}
-
-.line-clamp-2 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-
-.line-clamp-4 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-}
-
-.line-clamp-5 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
 }
