@@ -9,7 +9,7 @@ export default function Index() {
   const post = useLoaderData()
 
   return (
-    <section className="ml-5">
+    <section className="ml-5 mr-5">
       <h2 className="text-white text-bold text-[20px] mb-4">최근 글</h2>
       <Link to={`/posts/${post.slug}`}>
         <p className="text-[#ccc] font-bold text-[18px]">{post.title}</p>
