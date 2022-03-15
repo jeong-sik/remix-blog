@@ -23,7 +23,7 @@ export default function Index() {
         </a>
       </li>
       <li>
-        <a target="_blank" href="mailto:yousleewphen@gmail.com">
+        <a target="_blank" href="mailto:yousleepwhen@gmail.com">
           편지
         </a>
       </li>
