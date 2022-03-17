@@ -2387,12 +2387,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
-.mr-4 {
+.mx-4 {
+  margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-4 {
+  margin-right: 1rem;
 }
 
 .mt-auto {
@@ -2411,40 +2425,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.25rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
-.mb-0 {
-  margin-bottom: 0px;
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -2455,16 +2453,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.h-\[2px\] {
+  height: 2px;
+}
+
 .max-h-\[48px\] {
   max-height: 48px;
-}
-
-.max-h-\[24px\] {
-  max-height: 24px;
-}
-
-.max-h-\[72px\] {
-  max-height: 72px;
 }
 
 .min-h-\[100vh\] {
@@ -2511,10 +2505,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 24px;
 }
 
-.rounded-\[12px\] {
-  border-radius: 12px;
-}
-
 .bg-\[\#212121\] {
   --tw-bg-opacity: 1;
   background-color: rgb(33 33 33 / var(--tw-bg-opacity));
@@ -2529,12 +2519,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(47 47 47 / var(--tw-bg-opacity));
 }
 
-.p-5 {
-  padding: 1.25rem;
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
+.p-5 {
+  padding: 1.25rem;
 }
 
 .text-right {
@@ -2553,6 +2544,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 20px;
 }
 
+.text-\[22px\] {
+  font-size: 22px;
+}
+
 .text-\[18px\] {
   font-size: 18px;
 }
@@ -2569,10 +2564,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-\[22px\] {
-  font-size: 22px;
 }
 
 .font-bold {
