@@ -48,7 +48,7 @@ export async function getPosts() {
   return posts.sort((a, b) => new Date(b.date) - new Date(a.date))
 }
 
-export async function getRecentPost() {
+export async function getRecentPost(count = 1) {
   const postOrSeriesBasenames = await fs.readdir(`${__dirname}/../../posts`, {
     withFileTypes: true,
   })
@@ -70,5 +70,5 @@ export async function getRecentPost() {
     })
   )
   let sorted = posts.sort((a, b) => new Date(b.date) - new Date(a.date))
-  return sorted[0]
+  return sorted.slice(0, count)
 }

@@ -110,12 +110,26 @@ function Layout({ children }) {
   return (
     <div className="my-0 mx-auto max-w-[768px] flex flex-col min-h-[100vh] bg-[#2f2f2f] font-batang scrollbar-hide">
       <nav className="flex text-[rgb(204,204,204)] m-4">
-        <Link to="/posts" className="mr-4">
-          <h2 className="text-[28px] font-bold text-white mb-4">글</h2>
+        <Link to="/" className="flex items-center justify-center flex-none ">
+          <h2 className="text-[28px] flex-none font-bold text-white mb-4">
+            처음
+          </h2>
         </Link>
-        <Link to="/musics" className="mr-4">
-          <h2 className="text-[28px] font-bold text-white mb-4">음악</h2>
-        </Link>
+        <div className="flex ml-auto">
+          <Link to="/posts" className="mr-4">
+            <h2 className="text-[28px] font-bold text-white mb-4">글</h2>
+          </Link>
+          <Link to="/musics" className="mr-4">
+            <h2 className="text-[28px] font-bold text-white mb-4">음악</h2>
+          </Link>
+          <Link to="/about" className="flex items-center mb-4">
+            <Gravatar
+              width={30}
+              email="yousleepwhen@gmail.com"
+              className="rounded-[24px]"
+            />
+          </Link>
+        </div>
       </nav>
       <main>{children}</main>
       <script
@@ -146,27 +160,7 @@ function Layout({ children }) {
             allowFullScreen
           ></iframe>
         </div>
-        <div className="flex items-center justify-between flex-none mb-4">
-          <Link to="/" className="flex items-center justify-center flex-none ">
-            <h2 className="text-[28px] flex-none font-bold text-white ">
-              처음
-            </h2>
-          </Link>
-          <Link to="/about" className="flex items-center">
-            <Gravatar
-              email="yousleepwhen@gmail.com"
-              className="rounded-[24px]"
-            />
-          </Link>
-        </div>
-        {/* <iframe
-          width="100%"
-          height="300"
-          scrolling="no"
-          frameBorder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1164583294&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-        ></iframe> */}
+        <div className="flex items-center justify-between flex-none mb-4"></div>
       </footer>
     </div>
   )
