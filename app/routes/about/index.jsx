@@ -35,21 +35,21 @@ export default function Index() {
       <ul className=" text-[18px]">
         <li>
           <a target="_blank" href="https://vibe.naver.com/artist/43653">
-            프렌지(해체) - Bass, Abracadabra(나레이션), Guitar
+            프렌지(해체) - Bass, Abracadabra(나레이션), Guitar, Noise, 불평불만
           </a>
         </li>
         <li>
           <a target="_blank" href="https://vibe.naver.com/artist/269326">
-            아일(해체) - Guitar
+            아일(해체) - Guitar, 잔소리
           </a>
         </li>
         <li>
           <a target="_blank" href="https://vibe.naver.com/artist/6172">
-            전자양(former member) - Noise
+            전자양(former member) - Noise, 무기력
           </a>
         </li>
         <li>
-          <p>텐더라인(former member) - Bass</p>
+          <p>텐더라인(former member) - Bass, 회피</p>
         </li>
         <li>
           <a target="_blank" href="https://twitter.com/Alleyspears_98">
