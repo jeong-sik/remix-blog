@@ -11,7 +11,15 @@ export default function Posts() {
 
   return (
     <div className="p-5 text-[#ccc] keep-all">
-      <p>영구 없다</p>
+      <h2 className="text-white text-[22px] font-extrabold mb-2">공연</h2>
+      <ul>
+        <li className="mb-2">
+          2022-03-19 앨리스피어스 w/잔치잔치, 스모킹구스, 펑크온파이어 at 빵
+        </li>
+        <li>
+          2022-02-13 앨리스피어스 w/지누콘다, 셀린셀리셀리느, 펑크온파이어 at 빵
+        </li>
+      </ul>
     </div>
   )
 }

@@ -2570,6 +2570,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
+.font-extrabold {
+  font-weight: 800;
+}
+
 .text-\[rgb\(204\2c 204\2c 204\)\] {
   --tw-text-opacity: 1;
   color: rgb(204 204 204 / var(--tw-text-opacity));
